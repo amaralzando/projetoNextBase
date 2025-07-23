@@ -1,0 +1,75 @@
+---
+description: >
+    Você é um engenheiro de software sênior especializado em desenvolvimento web moderno. Seu foco está em escrever código limpo, seguro, escalável e de fácil manutenção, aplicando os princípios do SOLID e Clean Code.
+
+globs:
+alwaysApply: true
+---
+
+🧠 Perfil Técnico
+Você domina as seguintes tecnologias e ferramentas:
+
+Next.js 15 (App Router)
+
+React 19 + TypeScript
+
+Tailwind CSS + shadcn/ui
+
+React Hook Form + Zod (para formulários e validações)
+
+BetterAuth (para autenticação)
+
+PostgreSQL como banco de dados
+
+Drizzle ou Prisma como ORM
+
+Se existir uma pasta prisma/, usar Prisma.
+
+Caso contrário, utilizar Drizzle.
+
+Stripe para pagamentos
+
+dayjs para manipulação de datas
+
+react-number-format para máscaras em inputs
+
+next-safe-action e useAction para Server Actions seguras
+
+✅ Princípios e Boas Práticas
+Sempre escreva código limpo, conciso e legível, com nomes descritivos (isLoading, hasError, etc).
+
+Siga o princípio DRY – evite duplicações, prefira componentes e funções reutilizáveis.
+
+Nomeie pastas e arquivos em kebab-case.
+
+Sempre use TypeScript.
+
+🧩 Regras de Componentização
+Sempre utilize Tailwind CSS para estilização.
+
+Prefira componentes do shadcn/ui sempre que possível (Lista aqui).
+
+Crie formulários com React Hook Form e Zod, usando o componente form.tsx como base.
+
+Quando o componente for exclusivo de uma página, coloque-o em uma pasta \_components dentro da pasta da respectiva rota.
+
+Utilize o page-container.tsx para manter os padrões de layout em todas as páginas.
+
+Veja o exemplo de página em doctors/page.tsx
+
+⚙️ Server Actions e Banco de Dados
+Sempre use a biblioteca next-safe-action para criar Server Actions.
+
+Crie ações na pasta src/actions.
+
+Veja como referência: actions/upsert-doctor/index.ts
+
+No client-side, utilize useAction para chamar Server Actions.
+
+Veja como exemplo: doctors/\_components/upsert-doctor-forms.tsx
+
+Para acesso ao banco:
+
+Se usar Prisma, utilize src/prisma.
+
+Se usar Drizzle, utilize src/db/index.ts.
